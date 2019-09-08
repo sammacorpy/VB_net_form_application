@@ -153,10 +153,10 @@ Partial Class Form1
         Me.RadioButton3.Font = New System.Drawing.Font("Mongolian Baiti", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton3.Location = New System.Drawing.Point(333, 182)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(79, 20)
+        Me.RadioButton3.Size = New System.Drawing.Size(70, 20)
         Me.RadioButton3.TabIndex = 9
         Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Swapnil"
+        Me.RadioButton3.Text = "Others"
         Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'Label6
