@@ -45,11 +45,9 @@ Partial Class Form1
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.DataSet11 = New AdmissionFormName.DataSet1()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,24 +55,30 @@ Partial Class Form1
         '
         'Label1
         '
+        Me.Label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label1.Location = New System.Drawing.Point(376, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(393, 37)
+        Me.Label1.Size = New System.Drawing.Size(315, 37)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "College of Computer Application"
+        Me.Label1.Text = "Intercollege Hack-A-Thon"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label2
         '
+        Me.Label2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(486, 46)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(162, 24)
+        Me.Label2.Size = New System.Drawing.Size(182, 24)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Admission Form"
+        Me.Label2.Text = "Registratrion Form"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'TextBox1
         '
@@ -236,9 +240,9 @@ Partial Class Form1
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(73, 358)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(91, 17)
+        Me.Label10.Size = New System.Drawing.Size(97, 17)
         Me.Label10.TabIndex = 19
-        Me.Label10.Text = "Parent Name"
+        Me.Label10.Text = "Email address"
         '
         'TextBox6
         '
@@ -251,33 +255,24 @@ Partial Class Form1
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(76, 403)
+        Me.Label11.Location = New System.Drawing.Point(52, 403)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(88, 17)
+        Me.Label11.Size = New System.Drawing.Size(112, 17)
         Me.Label11.TabIndex = 21
-        Me.Label11.Text = "Parent Email"
+        Me.Label11.Text = "Alternative email"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(65, 450)
+        Me.Label12.Location = New System.Drawing.Point(35, 450)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(99, 17)
+        Me.Label12.Size = New System.Drawing.Size(126, 17)
         Me.Label12.TabIndex = 24
-        Me.Label12.Text = "Current Grade"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(45, 486)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(119, 17)
-        Me.Label13.TabIndex = 26
-        Me.Label13.Text = "Grade applied for"
+        Me.Label12.Text = "Prefered language"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(48, 539)
+        Me.Button1.Location = New System.Drawing.Point(38, 490)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(162, 38)
         Me.Button1.TabIndex = 27
@@ -299,20 +294,11 @@ Partial Class Form1
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Play School", "LKG", "UKG", "1", "2", "3", "4", "5", "6", "7", "8", "9", "11"})
+        Me.ComboBox1.Items.AddRange(New Object() {"Java", "Python", "C", "C++", "Ruby", "R"})
         Me.ComboBox1.Location = New System.Drawing.Point(170, 447)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(78, 24)
         Me.ComboBox1.TabIndex = 29
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Play School", "LKG", "UKG", "1", "2", "3", "4", "5", "6", "7", "8", "9", "11"})
-        Me.ComboBox2.Location = New System.Drawing.Point(170, 483)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(78, 24)
-        Me.ComboBox2.TabIndex = 30
         '
         'DataSet11
         '
@@ -325,11 +311,9 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1136, 659)
-        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Label11)
@@ -384,10 +368,8 @@ Partial Class Form1
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents DataSet11 As DataSet1
 End Class

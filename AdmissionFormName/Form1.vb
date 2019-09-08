@@ -31,7 +31,6 @@ Public Class Form1
         RadioButton2.Checked = False
         RadioButton3.Checked = False
         ComboBox1.Text = ""
-        ComboBox2.Text = ""
 
 
 
@@ -66,17 +65,16 @@ Public Class Form1
         End If
         Try
             cmd = conn.CreateCommand
-            cmd.CommandText = "INSERT INTO application(first_name, last_name, gender, address, pincode, parent_name, parent_email, current_grade, applied_grade, contact) VALUES (@first_name, @last_name, @gender, @address, @pincode, @parent_name, @parent_email, @current_grade, @applied_grade, @contact);"
+            cmd.CommandText = "INSERT INTO application(first_name, last_name, gender, address, pincode, email, alt_email, prefered_language, contact) VALUES (@first_name, @last_name, @gender, @address, @pincode, @email, @alt_email, @prefered_language, @contact);"
             cmd.Parameters.AddWithValue("@first_name", TextBox1.Text)
             cmd.Parameters.AddWithValue("@last_name", TextBox2.Text)
             cmd.Parameters.AddWithValue("@address", RichTextBox1.Text)
             cmd.Parameters.AddWithValue("@gender", gender)
             cmd.Parameters.AddWithValue("@pincode", TextBox3.Text)
             cmd.Parameters.AddWithValue("@contact", TextBox5.Text)
-            cmd.Parameters.AddWithValue("@parent_name", TextBox4.Text)
-            cmd.Parameters.AddWithValue("@parent_email", TextBox6.Text)
-            cmd.Parameters.AddWithValue("@current_grade", ComboBox1.Text)
-            cmd.Parameters.AddWithValue("@applied_grade", ComboBox2.Text)
+            cmd.Parameters.AddWithValue("@email", TextBox4.Text)
+            cmd.Parameters.AddWithValue("@alt_email", TextBox6.Text)
+            cmd.Parameters.AddWithValue("@prefered_language", ComboBox1.Text)
             cmd.ExecuteNonQuery()
             loadapplicants()
 
@@ -90,5 +88,7 @@ Public Class Form1
 
     End Sub
 
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
 
+    End Sub
 End Class
