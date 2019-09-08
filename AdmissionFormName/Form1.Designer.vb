@@ -60,11 +60,11 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label1.Location = New System.Drawing.Point(427, 9)
+        Me.Label1.Location = New System.Drawing.Point(376, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(278, 37)
+        Me.Label1.Size = New System.Drawing.Size(393, 37)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Sunbeam Bhagwanpur"
+        Me.Label1.Text = "College of Computer Application"
         '
         'Label2
         '
